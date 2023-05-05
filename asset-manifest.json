@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tech-task-tip-calculator/static/css/main.23d5a019.css",
+    "main.js": "/tech-task-tip-calculator/static/js/main.03c7eeaa.js",
+    "index.html": "/tech-task-tip-calculator/index.html",
+    "main.23d5a019.css.map": "/tech-task-tip-calculator/static/css/main.23d5a019.css.map",
+    "main.03c7eeaa.js.map": "/tech-task-tip-calculator/static/js/main.03c7eeaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23d5a019.css",
+    "static/js/main.03c7eeaa.js"
+  ]
+}
