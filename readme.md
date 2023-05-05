@@ -1,0 +1,2 @@
+# technical task
+## tip-calculator
