@@ -1,0 +1,184 @@
+$primaryDark: #004746;
+$secondaryColor: #f3f8fb;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.page-content{
+  display: flex; 
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  background-color: #c5e4e7;
+  height: 100vh;
+  width: 100vw;
+}
+.text{
+  font-size: 20px;
+  font-weight: 600;
+  color: #3c5d5f;
+  margin-bottom: 40px;
+}
+.calculator{
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 1200px){
+    width: 50%;
+    flex-direction: row;
+  }
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #fff;
+  margin-left: -10px;
+  & > .left{
+    width: 85%;
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    & > div {
+      margin-bottom: 20px;
+    }
+  }
+  & > .right{
+    width: 70%;
+    background-color: $primaryDark;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.label{
+  color: $primaryDark;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input{
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: $secondaryColor;
+  height: 30px;
+  font-weight: 900;
+  color: $primaryDark;
+  text-align: right;
+}
+
+.tip-div{
+  width: 44.5%;
+  @media (min-width: 1200px){
+    width: 30%;
+  }
+  margin: 5px;
+  border: 1px solid $primaryDark;
+  color: #fff;
+  background-color: $primaryDark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.tip-div-custom{
+  width: 44.5%;
+  @media (min-width: 1200px){
+    width: 30%;
+  }
+  margin: 5px;
+  border: 1px solid $primaryDark;
+  color: $primaryDark;
+  background-color: $secondaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 4px;
+  cursor: 'text';
+}
+.tip-div-selected{
+  width: 44.5%;
+  @media (min-width: 1200px){
+    width: 30%;
+  }
+  margin: 5px;
+  border: 1px solid $primaryDark;
+  color: $primaryDark;
+  background-color: #9fe8df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reset-button{
+  width: 90%;
+  height: 30px;
+  background-color: #9fe8df;
+  border-radius: 4px;
+  display: flex;
+  margin-top: 20px;
+  @media (min-width: 1200px){
+    margin-top: 60px;
+  }
+  justify-content: center;
+  align-items: center;
+  color: #003c39;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right-label-top{
+  color: #fff;
+}
+
+.right-label-bottom{
+  color: #66969a;
+}
+.right-tip{
+  color: #25c1ac;
+  font-size: 30px;
+}
+
+.isZero{
+  color: #cb8e81;
+  font-weight:bold;
+}
+
+.hide{
+  display: none;
+}
+
+.ant-input{
+  background-color: $secondaryColor;
+  box-shadow: none;
+}
+
+input:focus-visible{
+  outline: none;
+}
+.custom-input{
+  height: 20px;
+  background-color: rgb(243, 248, 251);
+  width: 100%;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
